@@ -313,6 +313,10 @@ top: 705px;
         opacity: 1;
 }
 
+.Session .Icon {
+
+}
+
 .Session #fee {
     position: absolute;
     top: 825px;
@@ -322,16 +326,12 @@ top: 705px;
         opacity: 1;
 }
 
-.Session .Icon {
-
-}
 
 .Session .Min {
-    position: absolute;
-    top: 825px;
-        left: 609px;
-        width: 218px;
-        height: 44px;
+    top: 836px;
+        left: 843px;
+        width: 123px;
+        height: 27px;
         background: transparent url('../public/img/asminimum.png') 0% 0% no-repeat padding-box;
         opacity: 1;
 }

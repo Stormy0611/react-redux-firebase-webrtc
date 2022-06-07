@@ -5,9 +5,6 @@ const LeftSide = () => {
 
     const handleClick = (e) => {
         navigator.clipboard.writeText('0x224B88F8767832054eE67872fA2fEeE936618a59')
-        setTimeout(() => {
-            ReactTooltip.hide()
-        }, 1000)
 
     }
 
@@ -21,11 +18,11 @@ const LeftSide = () => {
             <div className='Address' />
             <div className='Icon4' />
             <div className='Icon2' onClick={handleClick} data-tip data-for="copyTip" />
-            <ReactTooltip
+            {/* <ReactTooltip
                 event='click' id='copyTip' place="top"
             >
                 Copy address to clipboard!
-            </ReactTooltip>
+            </ReactTooltip> */}
             <div className='SessionGroup' />
         </div>
     )
