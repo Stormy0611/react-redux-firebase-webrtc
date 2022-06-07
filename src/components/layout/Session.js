@@ -14,7 +14,7 @@ const Session = () => {
             <div className='SDesc' />
             <input type='text' id='desc' />
             <div className='Fee' />
-            <input type='text' id='fee' />
+            <input type='text' id='f  ee' />
             <div className='Min' />
             <div className='Icon' />
             <div className='CreateBtn' />
