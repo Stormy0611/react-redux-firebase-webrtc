@@ -8,30 +8,31 @@ import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { reactReduxFirebase, getFirebase } from 'react-redux-firebase';
 import firebaseConfig from './config/fbConfig'
 import { Provider } from 'react-redux'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 
-import Navbar from './components/layout/Navbar'
-import Header from './components/layout/Header'
-
+import Home from './components/layout/Home';
+import Splash from './components/layout/Splash';
+import Create from './components/layout/Create';
+import Media from './components/layout/Media';
 
 const store = createStore(
   rootReducer,
-  compose(
-    applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
-    reactReduxFirebase(firebaseConfig, { userProfile: 'users', useFirestoreForProfile: true, attachAuthIsReady: true }),
-    reduxFirestore(firebaseConfig) // redux bindings for firestore
-  )
-);
-
-
+  applyMiddleware(thunk)
+)
 
 function App() {
   return (
     <Provider store={store}>
-      {/* <ReactReduxFirebaseProvider> */}
-        <div className="App">
-          <Header />
-        </div>
-      {/* </ReactReduxFirebaseProvider> */}
+        <BrowserRouter>
+          <div className="App">
+                <Routes>
+                  <Route path='/' element={<Splash />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/session' element={<Create />} />
+                       
+                </Routes>
+          </div>
+        </BrowserRouter>
     </Provider>
   );
 }
