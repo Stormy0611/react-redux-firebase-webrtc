@@ -1,27 +1,20 @@
 import React from 'react'
-import Header from './Header';
-import LeftSide from './LeftSide';
-import Center from './Center';
+import Header from '../layout/Header';
+import LeftSide from '../layout/LeftSide';
+import Center from '../layout/Center';
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 // import { useState } from 'react';
 
-const Home = () => {
+const Home = (props) => {
 
-    // const [comp, setComp] = useState(false)
-
-    // const changeComp = (_comp) => {
-    //     setComp(_comp);
-    // }
-
-    // let currentComp;
-    // if (comp)
-    //     currentComp = (<Session />)
-    // else
-    //     currentComp = (<Center onchange={changeComp} />)
+    // useLayoutEffect(() => {
+    //     window.location.reload(true)
+    // }, []);
 
     return (
         <div className='Home'>
             <Header />
-            <LeftSide />
+            <LeftSide account={ props.account}/>
             {/* {currentComp} */}
             <Center />
             <div className='Line' />

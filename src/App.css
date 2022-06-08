@@ -161,11 +161,14 @@ body {
 
 .Address {
     position: absolute;
-    top: 513px;
+    top: 500px;
     left: 135px;
     width: 199px;
     height: 36px;
-    background: transparent url('../public/img/0x224B88F8767832054eE67872fA2fEeE936618a59.png') 0% 0% no-repeat padding-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
     opacity: 1;
 }
 
@@ -177,6 +180,16 @@ body {
     height: 36px;
     background: transparent url('../public/img/Rectangle14.png') 0% 0% no-repeat padding-box;
     opacity: 1;
+}
+
+.Icon5 {
+    position: absolute;
+        top: 513px;
+        left: 330px;
+        width: 200px;
+        height: 36px;
+        background: transparent url('../public/img/Rectangle141.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
 }
 
 .SessionGroup {
@@ -346,14 +359,6 @@ top: 926px;
     opacity: 1;
 }
 
-.Session .BtnText {
-
-}
-
-.Session .Arrow {
-
-}
-
 .Session .UnderText {
     position: absolute;
     top: 1005px;
@@ -402,5 +407,77 @@ top: 926px;
         width: 12px;
         height: 12px;
         background: transparent url('../public/img/followinstruction.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
+
+.Screen .Main {
+    /* Layout Properties */
+    position: absolute;
+        top: 394px;
+        left: 523px;
+        width: 873px;
+        height: 436px;
+        /* UI Properties */
+        background: transparent url('../public/img/Rectangle20.png') 0% 0% no-repeat padding-box;
+        opacity: 0.2;
+}
+
+.Screen .StartBtn {
+    position: absolute;
+    top: 394px;
+        left: 1422px;
+        width: 165px;
+        height: 47px;
+        background: transparent url('../public/img/Group253.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
+
+.Screen .ShareIcon {
+    position: absolute;
+top: 473px;
+    left: 1431px;
+    width: 25px;
+    height: 32px;
+    background: transparent url('../public/img/Group252.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.Screen .ShareText {
+    position: absolute;
+    top: 482px;
+        left: 1469px;
+        width: 147px;
+        height: 15px;
+        background: transparent url('../public/img/SHARETOTHEWORLD.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
+
+.Screen .EndBtn {
+    position: absolute;
+    top: 783px;
+        left: 1422px;
+        width: 165px;
+        height: 47px;
+        background: transparent url('../public/img/Group254.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
+
+.Screen .Logo {
+    position: absolute;
+    top: 865px;
+        left: 523px;
+        width: 85px;
+        height: 57px;
+        background: transparent url('../public/img/Group244.png') 0% 0% no-repeat padding-box;
+        opacity: 1;
+}
+
+.Screen .Text {
+    position: absolute;
+    top: 883px;
+        left: 630px;
+        width: 327px;
+        height: 23px;
+        background: transparent url('../public/img/STARTLFSESSION.png') 0% 0% no-repeat padding-box;
         opacity: 1;
 }

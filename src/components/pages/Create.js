@@ -1,10 +1,21 @@
-import React from 'react'
-import Header from './Header';
-import LeftSide from './LeftSide';
-import Session from './Session';
+import React, { useState } from 'react'
+import Header from '../layout/Header';
+import LeftSide from '../layout/LeftSide';
+import Session from '../layout/Session';
 // import { useState } from 'react';
 
-const Create = () => {
+const Create = (props) => {
+
+    const [myAccount, setAccount] = useState(props)
+
+    const changeAccount = (_account) => {
+        setAccount(_account)
+        sessionStorage['account'] = _account
+    }
+
+    // useLayoutEffect(() => {
+    //     window.location.reload(true)
+    // }, []);
 
     // const [comp, setComp] = useState(false)
 
@@ -21,9 +32,9 @@ const Create = () => {
     return (
         <div className='Create'>
             <Header />
-            <LeftSide />
+            <LeftSide account={ props.account} />
             {/* {currentComp} */}
-            <Session />
+            <Session change={changeAccount.bind()} />
             <div className='Line' />
             <div className='About' />
             <div className='Copy' />
